@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ /* all navigation layout */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+}
+body{
+  background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+    
+}
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 660px;
+    margin: auto;
+    padding-top: 10px;
+  }
+  
+
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #273746;
+    font-size: 15px;
+    padding: 8px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #273746;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+.fix {
+  clear: both;
+}
+
+
+/* New Zealand logo  nav area*/
+.logo{
+    color: #F0F3F4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+/* Navigations Links */
+.nav-links{
+    display: flex;
+    justify-content: space-around;  
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #F0F3F4;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links a:hover{
+    background-color:#5D6D7E;
+    opacity: .8;
+}
+/* devices menubar */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #F0F3F4;
+    margin: 5px;
+    transition: all 0.3s ease;
+    
+}
+/* device responsive layout */
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D6D7E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0.8;
+    }
+    .nav-links li:hover{
+      background-color: white;
+      
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navlinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg)translate(-5px,6px);
+
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.content-area {
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+   
+  }
+  
+  .main-area {
+    margin-left: 120px;
+    margin-right: auto;
+    width: 50%;
+    float: left;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 114%;
+    color:#BCC8D0;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+    
+  }
+  
+  .sidebar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    float: left;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 114%;
+    color: #F0F3F4;
+    background-color: #B1C7D6 ;
+    opacity: .7;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#B1C7D6 ),
+    to(#84919E )
+    );
+  
+    }
+  .sidebar p {
+      text-align: center;
+      font-family: 'Nixie One', cursive;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 25px;
+  }
+
+  /* Responsive Layout for main-area and sidebar on devices */
+
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+  .main-area {margin-left: 0;
+    width: 100%;
+    height: auto;
+    position: relative;}
+
+  }
+  
+  /*social media side icons from w3school website code*/
+
+  .icon-bar a:hover {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    opacity: 0.3;
+    color: white;
+    
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    opacity: 0.3;
+    font-size: 30px;
+  }
+
+  /*footer udemy class code source*/
+  
+  footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    color: #999;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+    }
+  .fix {
+    clear: both;
+  }
+  
+  .row:before,
+  .row:after,
+  .group:before,
+  .group:after {
+  content: "";
+  display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+  
+  .group {
+    zoom: 1;
+  }

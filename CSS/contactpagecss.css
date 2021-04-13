@@ -1,0 +1,257 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+/* all navigation layout */
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Raleway', sans-serif;
+  background-color: #273746;
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  from(#273746),
+  to(#84919E )
+  );
+}
+.contact-title{
+  margin-top: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 4s ease-in-out;
+}
+.contact-title h1{
+  font-size: 32px;
+  
+}
+
+body{
+ text-align: center; 
+  padding:10px;
+  padding-bottom:60px;   
+  display:flex; 
+  flex-direction:column; 
+  background-color: #273746;
+  background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  from(#273746),
+  to(#84919E )
+  );
+  
+}
+form{
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+input{
+  height: 45px;
+}
+form .submit{
+  background: #31353c;
+  border-color: #fff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+form .submit:hover{
+  background-color: #919598;
+  cursor: pointer;
+}
+/* New Zealand logo */
+.logo{
+    color: #F0F3F4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+/* Navigations Links */
+.nav-links{
+    display: flex;
+    justify-content: space-around;  
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #F0F3F4;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links a:hover{
+    background-color:#5D6D7E;
+    opacity: .8;
+}
+/* devices menubar */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #F0F3F4;
+    margin: 5px;
+    transition: all 0.3s ease;
+    
+}
+/* device responsive layout */
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D6D7E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0.8;
+    }
+    .nav-links li:hover{
+      background-color: white;
+      
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navlinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg)translate(-5px,6px);
+
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+/*social media side icons from w3school website code*/
+
+  
+.icon-bar a:hover {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    opacity: 0.3;
+    color: white;
+    
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    opacity: 0.3;
+    font-size: 30px;
+  }
+
+
+  
+  footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    color: #999;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    
+  }
+  @media  all and (max-width: 640px) {
+    input label {
+      position: static;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      transform: translate(0, 0);
+      width: 100%;
+      margin-top: 70px;
+      margin-bottom: 20px;
+    }
+    input label h3 {
+        font-size: 24px;
+        top: -26px;
+    }
+  }

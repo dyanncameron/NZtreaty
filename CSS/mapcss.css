@@ -1,0 +1,248 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ /* all navigation layout */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+}
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #273746;
+}
+h1{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* CSS source code for responsive map https://blog.duda.co/responsive-google-maps-for-your-website */
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  
+
+}
+
+
+/* New Zealand logo */
+.logo{
+    color: #F0F3F4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+  }
+  /* Navigations Links */
+  .nav-links{
+    display: flex;
+    justify-content: space-around;  
+    
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links a{
+    color: #F0F3F4;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .nav-links a:hover{
+    background-color:#5D6D7E;
+    opacity: .8;
+  }
+  /* devices menubar */
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #F0F3F4;
+    margin: 5px;
+    transition: all 0.3s ease;
+    
+  }
+  /* device responsive layout */
+  @media screen and (max-width:1024px){
+    .nav-links {
+        width: 50%;
+    }
+  }
+  @media screen and (max-width:768px){
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D6D7E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0.8;
+    }
+    .nav-links li:hover{
+      background-color: white;
+      
+    }
+    .burger{
+        display: block;
+    }
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  
+  @keyframes navlinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+  
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+  
+    }
+  }
+  .toggle .line1{
+    transform: rotate(-45deg)translate(-5px,6px);
+  
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+  }
+
+
+  /*social media side icons from w3school website code*/
+
+ .icon-bar{
+  margin-top: 45px;
+}
+
+.icon-bar a:hover {
+   background-color:#5D6D7E;
+   opacity: 0.8;
+ }
+ 
+ .facebook {
+   background: #3B5998;
+   opacity: 0.8;
+   color: white;
+   
+ }
+ 
+ .twitter {
+   background: #55ACEE;
+   opacity: 0.8;
+   color: white;
+ }
+ 
+ .google {
+   background: #dd4b39;
+   opacity: 0.8;
+   color: white;
+ }
+ 
+ .linkedin {
+   background: #007bb5;
+   opacity: 0.8;
+   color: white;
+ }
+ 
+ .youtube {
+   background: #bb0000;
+   opacity: 0.8;
+   color: white;
+ }
+ 
+ .content {
+   margin-left: 75px;
+   opacity: 0.3;
+   font-size: 30px;
+ }
+ /*footer udemy class code source and w3school*/
+  footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    color: #999;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+    }
+
+.fix {
+  clear: both;
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}

@@ -1,0 +1,324 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ /* all navigation layout */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+}
+body{
+  background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+    
+}
+
+
+/* New Zealand logo  nav area*/
+.logo{
+    color: #F0F3F4;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+/* Navigations Links */
+.nav-links{
+    display: flex;
+    justify-content: space-around;  
+    
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: #F0F3F4;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links a:hover{
+    background-color:#5D6D7E;
+    opacity: .8;
+}
+/* devices menubar */
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: #F0F3F4;
+    margin: 5px;
+    transition: all 0.3s ease;
+    
+}
+/* device responsive layout */
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D6D7E;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0.8;
+    }
+    .nav-links li:hover{
+      background-color: white;
+      
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navlinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg)translate(-5px,6px);
+
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+/*upcoming events css code source https://www.youtube.com/watch?v=2_mH8HyZLvA*/
+
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+    color: #F0F3F4;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 32px 0;
+  }
+  
+  .event .event-left {
+    background: #222;
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 8px 48px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event .event-right h3.event-title {
+    font-size: 24px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+  }
+  
+  .event .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }
+
+/*social media side icons from w3school website code*/
+
+.icon-bar a:hover {
+    background-color: #000;
+    opacity: 0.5;
+  }
+  
+  .facebook {
+    background: #3B5998;
+    opacity: 0.3;
+    color: white;
+    
+  }
+  
+  .twitter {
+    background: #55ACEE;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .google {
+    background: #dd4b39;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .linkedin {
+    background: #007bb5;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .youtube {
+    background: #bb0000;
+    opacity: 0.3;
+    color: white;
+  }
+  
+  .content {
+    margin-left: 75px;
+    opacity: 0.3;
+    font-size: 30px;
+  }
+
+
+
+
+  /*footer udemy class code source*/
+  
+  footer {
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    color: #999;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #273746;
+    background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#273746),
+    to(#84919E )
+    );
+    }
+  .fix {
+    clear: both;
+  }
+  
+  .row:before,
+  .row:after,
+  .group:before,
+  .group:after {
+  content: "";
+  display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+  
+  .group {
+    zoom: 1;
+  }

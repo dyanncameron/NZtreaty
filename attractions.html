@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content=ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/attractionscss.css">
+    <!--w3school css source link for social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="icons8-new-zealand-navigation-48.png"/>
+    <!---->
+    <title>Aotearoa</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        <h4>New Zealand</h4>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="treatywaitangi.html">Treaty of Waitangi</a>
+        </li>
+        <li>
+            <a href="attractions.html">Attractions</a>
+        </li>
+        <li>
+            <a href="upcomingevents.html">Upcoming Events</a>
+        </li>
+        <li>
+            <a href="map.html">Maps</a>
+        </li>
+        <li>
+            <a href="contactpage.html">Contact</a>
+        </li>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!--Images Slide Modal-->
+
+    <!-- Trigger the Modal -->
+    <h1>New Zealand Attractions</h1>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/foxglacier.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/aoraki:mountcook.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/milford.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="images/royspeak.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/foxglacier.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/aoraki:mountcook.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/milford.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/royspeak.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="images/foxglacier.jpg" style="width:100%" onclick="currentSlide(1)" alt="Fox Glacier">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/aoraki:mountcook.jpg" style="width:100%" onclick="currentSlide(2)" alt="Aoraki / Mount Cook ">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/milford.jpg" style="width:100%" onclick="currentSlide(3)" alt="Milford Sound">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="images/royspeak.jpg" style="width:100%" onclick="currentSlide(4)" alt="Roys Peak">
+        </div>
+      </div>
+    </div>
+    <div class="content-area group">
+
+        <div class="main-area">
+          <h2>(click photo to maximize)</h2>
+
+          <h3>"Mountains, volcanoes and Glaciers"</h3>
+          <br>
+    
+         <p>The South Island is much more mountainous than the North, but shows fewer manifestations of recent volcanic activity. There are 18 peaks of more than 3,000 metres (9,800 feet) in the Southern Alps, which stretch for 500 kilometres (310 mi) down the South Island.The closest mountains surpassing it in elevation are found not in Australia, but in New Guinea and Antarctica. As well as the towering peaks, the Southern Alps include huge glaciers such as Franz Josef and Fox.The country's highest mountain is Aoraki / Mount Cook; its height since 2014 is listed as 3,724 metres (12,218 feet) (down from 3,764 m (12,349 ft) before December 1991, due to a rockslide and subsequent erosion).[34] The second highest peak is Mount Tasman, with a height of 3,497 metres (11,473 ft).</p>
+            <br>
+           <p>The North Island Volcanic Plateau covers much of central North Island with volcanoes, lava plateaus, and crater lakes. The three highest volcanoes are Mount Ruapehu (2,797 metres (9,177 ft)), Mount Taranaki (2,518 metres (8,261 ft)) and Mount Ngauruhoe (2,287 metres (7,503 ft)). Ruapehu's major eruptions have historically been about 50 years apart,in 1895, 1945 and 1995–1996. The 1886 eruption of Mount Tarawera, located near Rotorua, was New Zealand's largest and deadliest eruption in the last 200 years, killing over 100 people.[37] Another long chain of mountains runs through the North Island, from Wellington to East Cape. The ranges include Tararua and Kaimanawa.</p> 
+            <br>
+            <p>The lower mountain slopes are covered in native forest. Above this are shrubs, and then tussock grasses. Alpine tundra consists of cushion plants and herbfields; many of these plants have white and yellow flowers.</p>     
+            <br>
+            <h3><b>"Caves"</b></h3>
+            <br>
+         <p>New Zealand's cave systems have three main origins, the chemical weathering of limestone by water (karst), lava caves and erosion by waves (sea caves). Therefore, the distribution of limestone, marble (metamorphosed limestone) and volcanoes defines the location of caves in inland New Zealand. The main regions of karst topography are the Waitomo District and Takaka Hill in the Tasman district. Other notable locations are on the West Coast (Punakaiki), the Hawkes Bay and Fiordland.</p>
+            <br>
+        <h3><b>"Rivers and lakes"</b></h3>
+            <br>
+            <p>The proportion of New Zealand's area (excluding estuaries) covered by rivers, lakes and ponds, based on figures from the New Zealand Land Cover Database, is (357526 + 81936) / (26821559 – 92499–26033 – 19216) = 1.6%.If estuarine open water, mangroves, and herbaceous saline vegetation are included, the figure is 2.2%.</p>
+            <br>
+            <p>The mountainous areas of the North Island are cut by many rivers, many of which are swift and unnavigable. The east of the South Island is marked by wide, braided rivers such as the Wairau, Waimakariri and Rangitātā; formed from glaciers, they fan out into many strands on gravel plains. The Waikato, flowing through the North Island, is the New Zealand's longest river, with a length of 425 kilometres (264 mi).New Zealand's rivers feature hundreds of waterfalls; the most visited set of waterfalls are the Huka Falls that drain Lake Taupo.</p>
+            <br>
+            <p>Lake Taupo, located near the centre of the North Island, is the largest lake by surface area in the country. It lies in a caldera created by the Oruanui eruption, the largest eruption in the world in the past 70,000 years. There are 3,820 lakes with a surface area larger than one hectare.[49] Many lakes have been used as reservoirs for hydroelectric projects.</p>
+        </div>
+    
+
+
+        
+    
+      </div>
+    
+      <footer>
+         <!--social media icons-->
+    <div class="icon-bar">
+      <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+      <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+      <a href="#" class="google"><i class="fa fa-google"></i></a> 
+      <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+    </div>
+        <small>&copy; Copyright 2020 - ATC Vision College for School Purpose only.</small>
+      </footer>
+    </div>
+    
+    <!--Javasript link file-->
+    <script src="javascript/javafile.js"></script>
+
+</body>
+
+
+</html>
